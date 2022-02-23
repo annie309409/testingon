@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    div.article{
+      margin-left: 20px;
+      margin-top: 50px;
+      width: 200px;
+      height: 500px;
+    }
+    div.article>div.image{
+      background-color: #fc0;
+      width: 100%;
+      height: 500px;
+    }
+    div.article>div.texts{
+      background-color: #ccc;
+      width: 100%;
+      height: 500px;
+      margin-top: -500px;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    div.article:hover>div.texts{
+      opacity: 1;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+  <div class="article">
+    <div class="image"></div>
+    <div class="texts">
+      <h3>segment title</h3>
+      <h5>Lorem ipsum dolor sit amet.</h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum voluptas deserunt enim aliquid, earum, corporis, debitis quo est molestias accusamus delectus. Praesentium, expedita? Reiciendis rerum adipisci perspiciatis mollitia harum!</p>
+    </div>
+  </div>
+</body>
+</html>
