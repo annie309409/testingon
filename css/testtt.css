@@ -1,0 +1,139 @@
+div.mnTopWrap{
+  background-color: #000;
+  color:#fff;
+}
+div.mnTopWrap>div.mnTop{
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1080px;
+}
+div.mnTopWrap>div.mnTop::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+div.mnTopWrap>div.mnTop>div.info{
+  float: left;
+}
+div.mnTopWrap>div.mnTop>div.info>h4{
+  float: left;
+}
+div.mnTopWrap>div.mnTop>div.info>h4{
+  float: left;
+}
+div.mnTopWrap>div.mnTop>ul.nav{
+  float: right;
+}
+div.mnTopWrap>div.mnTop>ul.nav>li{
+  float: left;
+}
+
+
+div.hdrWrap{}
+div.hdrWrap>div.header{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+
+}
+div.hdrWrap>div.header>div.hdrTop{
+  padding: 40px 0;
+}
+div.hdrWrap>div.header>div.hdrTop::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+div.hdrWrap>div.header>div.hdrTop>h4{
+  width: calc(100% / 12 * 2);
+  float: left;
+  font-size: 12px;
+}
+div.hdrWrap>div.header>div.hdrTop>h1{
+  float: left;
+  width: calc(100% / 12 * 8);
+  text-transform: uppercase;
+  text-align: center;
+}
+div.hdrWrap>div.header>div.hdrTop>div.btn{
+  width: calc(100% / 12 * 2);
+  background-color: #fc0;
+  float: right;
+
+}
+div.hdrWrap>div.header>div.hdrBtm{
+  background-color: darkgreen;
+  color: #fff;
+  line-height: 80px;
+  padding: 0 40px;
+  position: relative;
+}
+div.hdrWrap>div.header>div.hdrBtm::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+div.hdrWrap>div.header>div.hdrBtm>ul.nav{
+  float: left;
+}
+div.hdrWrap>div.header>div.hdrBtm>ul.nav>li{
+  float: left;
+}
+div.hdrWrap>div.header>div.hdrBtm>ul.menu{
+  float: right;
+}
+div.hdrWrap>div.header>div.hdrBtm>ul.menu>li{
+  float: left;
+} 
+
+div.mnWrap{
+  background-color: #ccc;
+  margin-top: -40px;
+}
+div.mnWrap>div.main{
+  padding-top: 320px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1080px;
+  padding-bottom: 320px;
+}
+
+
+div.bnrWrap02{}
+div.bnrWrap.bnrWrap02>div.banner.bnr02{
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>div.bnrLeft{
+  width: 50%;
+  float: left;
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>div.bnrRight{
+  width: 50%;
+  float: left;
+  
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>div.bnrRight>div.ovrGrid{
+  width: calc((100vw - 1080px) / 2 + 100%);
+  background-color: #f00;
+  height: 500px;
+  min-width: 1080px;
+  
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>div.bnrLeft>div.ovrGrid{
+  width: calc((100vw - 1080px) / 2 + 100%);
+  background-color: orange;
+  height: 850px;
+  margin-left: calc((100vw - 1080px) / -2);
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>div.bnrLeft>div.header{
+  margin-top: -850px;
+}
