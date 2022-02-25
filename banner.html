@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <style>
+    div.bnrWrap{}
+    div.bnrWrap>div.banner{
+      width: 80%;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    div.bnrWrap>div.banner::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    div.bnrWrap>div.banner>div{
+      width: 50%;
+      float: left;
+    }
+    div.bnrWrap>div.banner>div>div.ovrGrid{
+      width: calc((100vw - 1080px) / 2 + 100%);
+
+      height: 840px;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.ovrGrid{
+      background-color: green;
+      margin-left: calc((100vw - 1080px) / -2);
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts{
+      margin-top: -840px;
+      padding: 120px 0;
+      color: #fff;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>div.header{
+      padding-right: 20px;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>div.header>h5{
+      font-size: 15px;
+      line-height: 40px;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>div.header>h2{
+      font-size: 24px;
+      line-height: 40px;
+    }   
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>div.header>h2::after{
+      content: '';
+      display: block;
+      width: calc(100% / 6 );
+      height: 5px;
+      background-color: #fff;
+      margin-top: 20px;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>div.header>p{
+      margin-top: 20px;
+      height: 40px;
+      line-height: 20px;
+      font-size: 12px;
+      overflow: hidden;
+    }
+    div.bnrWrap>div.banner>div.bnrRight>div.ovrGrid{
+      background-color: #ccc;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>form{
+      margin-top: 40px;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>form h4{
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 40px;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>form input{
+      line-height: 40px;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>form>div.fmTop{
+      border-bottom: 1px solid white;
+      padding-bottom: 20px;
+    }
+    
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>form>div.fmMid{
+      padding-bottom: 20px;
+      border-bottom: 1px solid white;
+      
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>form>div.fmMid>div{
+      width: 50%;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>form>div.fmMid::after{
+      clear: both;
+      content: '';
+      display: block;
+    }
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>form>div.fmMid>div{
+      float: left;
+    }
+    
+    div.bnrWrap>div.banner>div.bnrLeft>div.texts>form>div.btn>input{
+      width: calc(100% / 6 * 2.2);
+      height: 40px;
+      border: 0;
+      background-color: #fc0;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+  
+    </style>
+</head>
+<body>
+  <div class="bnrWrap">
+    <div class="banner">
+      <div class="bnrLeft">
+        <div class="ovrGrid"></div>
+        <div class="texts">
+          <div class="header">
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <h2>lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod laudantium amet magni, asperiores molestias vero beatae tenetur. Natus asperiores eaque qui deserunt eveniet facere autem magni, temporibus, quam ratione numquam.</p>
+          </div>
+          <form action="">
+            <div class="fmTop">
+              <h4>it was popurlated in the 1960s</h4>
+              <input type="radio" name="btn1" id="bn1" checked><label for="bn1">button1</label>
+              <input type="radio" name="btn1" id="bn2"><label for="bn2">button2</label>
+              <input type="radio" name="btn1" id="bn3"><label for="bn3">button3</label>
+            </div>
+            <div class="fmMid">
+              <div class="mdLeft">
+                <h4>lorem ipsum</h4>
+                <input type="radio" name="btn2" id="bn4"><label for="bn4" checked>button1</label>
+                <input type="radio" name="btn2" id="bn5"><label for="bn5">button2</label>
+              </div>
+              <div class="mdRight">
+                <h4>lorem ipsum</h4>
+                <input type="text">
+              </div>
+            </div>
+            <div class="fmBtm">
+              <h4>lorem ipsum</h4>
+              <input type="checkbox" id="ch" checked><label for="ch">check</label>
+            </div>
+            <div class="btn">
+              <input type="submit" value="button">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="bnrRight">
+        <div class="ovrGrid"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
