@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.rec{
+      animation-name: round;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      width: 500px;
+      height: 500px;
+      background-image: url('./images/vinyl_PNG63.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+
+    }
+    div.rec>div.img{
+      width: 200px;
+      height: 200px;
+      background-image: url('./images/cnt02_pic01.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      margin: auto;
+      left: 0;right: 0;top: 0;bottom: 0;
+      border-radius: 50%;
+    }
+
+    div.txtView{
+      width: 100vw;
+      height: 100px;
+      overflow: hidden;
+    }
+    div.txtView>h1{
+      width: 300vw;
+      line-height: 50px;
+      font-size: 40px;
+      animation-name: txt;
+      animation-duration: 100s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    @keyframes round{
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(365deg);
+      }
+    }
+
+    @keyframes txt {
+      0%{
+        margin-left: 0%;
+      }
+      50%{
+        margin-left: -200vw;
+      }
+      100%{
+        margin-left: -300vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rec">
+    <div class="img"></div>
+  </div>
+  <div class="txtView">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum autem perferendis eaque cum tempore molestiae minima fugit beatae, dolore, dolorem cupiditate praesentium temporibus quisquam minus possimus magnam neque est exercitationem.</h1>
+
+  </div>
+</body>
+</html>
